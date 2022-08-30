@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  random-sampling-based-grouping:
+    image: mongo:4.0
+    restart: always
+    hostname: random-sampling-based-grouping
+    container_name: random-sampling-based-grouping
+    command: mongod --noauth
+    ports:
+      - 25037:27017
